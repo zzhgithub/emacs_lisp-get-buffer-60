@@ -1,0 +1,8 @@
+(defun get-buffer-60 ()
+"This is a funcation get 60 charactristics top of buffer
+to string printing"
+(interactive)
+(save-restriction
+(widen)
+(save-excursion
+(message (buffer-substring (goto-char 60) (point-min)))))
